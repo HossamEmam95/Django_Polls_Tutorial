@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<h1>{{question}}</h1>
+{%for choice in choices%}
+{{choice}}<br>
+{%endfor%}
+
+<a href="{%url 'new_choice' question.id %}">Add choice</a>
+</body>
+</html>

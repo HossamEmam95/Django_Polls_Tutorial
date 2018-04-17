@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome Home</h1>
+<a href="{%url 'new_question'%}">Craete Question</a><br><br><br>
+{% for question in questions %}
+<a href="{%url 'detail' question.id %}">{{question}}</a><br>
+{%endfor%}
+
+</body>
+</html>
